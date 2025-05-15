@@ -1,12 +1,5 @@
 # Tarea 2.3: Montado de un sistema de ficheros con `chroot`
 
-## Descripción
-
-En esta práctica se utilizará una máquina virtual con Debian como sistema base. Se usará una imagen `.iso` de Kali Linux como sistema Live para recuperar el usuario y la contraseña del sistema Debian mediante el comando `chroot`.
-
----
-
-## Pasos de la tarea
 
 ### 1. Instalación de la máquina base
 
@@ -129,13 +122,4 @@ umount /mnt/recuperar
 - Inicia nuevamente el sistema Debian desde el disco duro.
 - Comprueba que puedes acceder con el usuario recuperado o modificado.
 
----
 
-## Observaciones
-
-- Esta técnica es útil para:
-  - Recuperar usuarios o contraseñas.
-  - Reparar configuraciones del sistema.
-  - Instalar o eliminar paquetes en sistemas que no inician correctamente.
-- Asegúrate de trabajar con permisos de administrador (`root`) para evitar errores de acceso.
-- `chroot` crea un entorno aislado, ideal para manipular un sistema desde otro Linux sin necesidad de arrancarlo directamente.
